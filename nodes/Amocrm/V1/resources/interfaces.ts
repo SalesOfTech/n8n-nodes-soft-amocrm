@@ -13,7 +13,7 @@ type IAmoMap = {
 	webhooks: 'getWebhooks' | 'addOrUpdateWebhooks';
 	links: 'getLinks' | 'addLinks';
 	events: 'getEvents' | 'getEventById';
-	amojo: 'sendMessage';
+	amojo: 'connectChatChannel' | 'sendChatApiMessage';
 	customers:
 		| 'getCustomers'
 		| 'createCustomers'

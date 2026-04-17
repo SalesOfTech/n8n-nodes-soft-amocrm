@@ -1,8 +1,10 @@
 import { INodeProperties } from 'n8n-workflow';
 
-import * as sendMessage from './sendMessage';
+import * as connectChatChannel from './connectChatChannel';
+import * as sendChatApiMessage from './sendChatApiMessage';
 
-export { sendMessage };
+export { connectChatChannel };
+export { sendChatApiMessage };
 
 export const descriptions: INodeProperties[] = [
 	{
@@ -17,13 +19,18 @@ export const descriptions: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Send Message',
-				value: 'sendMessage',
-				action: 'Send messenger message via amojo',
+				name: 'Connect Chat Channel',
+				value: 'connectChatChannel',
+				action: 'Connect chat channel to account via signed chats api',
+			},
+			{
+				name: 'Send Chat API Message',
+				value: 'sendChatApiMessage',
+				action: 'Send signed chat api message',
 			},
 		],
-		default: 'sendMessage',
+		default: 'sendChatApiMessage',
 	},
-	...sendMessage.description,
+	...connectChatChannel.description,
+	...sendChatApiMessage.description,
 ];
-
