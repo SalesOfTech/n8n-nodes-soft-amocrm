@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-soft-amocrm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SOFT fork of n8n node for AmoCRM API",
   "keywords": [
     "n8n-community-node-package",

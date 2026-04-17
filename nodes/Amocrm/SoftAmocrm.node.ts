@@ -1,7 +1,7 @@
 import { INodeTypeBaseDescription, IVersionedNodeType, VersionedNodeType } from 'n8n-workflow';
 import { AmocrmV1 } from './V1/AmocrmV1.node';
 
-export class Amocrm extends VersionedNodeType {
+export class SoftAmocrm extends VersionedNodeType {
 	constructor() {
 		const baseDescription: INodeTypeBaseDescription = {
 			displayName: 'Soft AmoCRM',
